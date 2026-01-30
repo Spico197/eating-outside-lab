@@ -2,7 +2,7 @@
 
 一个精美、实用的餐厅随机选择器，帮你解决「今天吃什么」的世界级难题！
 
-**Live Demo**: [Add your Vercel URL here]
+**Live Demo**: https://eating-outside-lab.vercel.app/
 
 ## ✨ Features
 
