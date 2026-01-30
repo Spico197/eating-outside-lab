@@ -76,3 +76,5 @@ __pycache__
 .eslintcache
 .stylelintcache
 *.tsbuildinfo
+.vercel
+.env*.local
