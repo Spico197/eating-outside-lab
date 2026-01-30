@@ -189,6 +189,26 @@ export default function Home() {
         </a>
       </div>
 
+      {/* Main Action Button */}
+      <button
+        onClick={startSpin}
+        disabled={isSpinning || filteredRestaurants.length === 0}
+        style={{
+          ...styles.mainBtn,
+          opacity: filteredRestaurants.length === 0 ? 0.5 : 1,
+          cursor: isSpinning ? 'wait' : filteredRestaurants.length === 0 ? 'not-allowed' : 'pointer',
+        }}
+      >
+        {isSpinning ? (
+          <span style={styles.spinningText}>🎲 选择中...</span>
+        ) : (
+          <>
+            <span style={styles.btnIcon}>🎲</span>
+            <span>帮我选一个</span>
+          </>
+        )}
+      </button>
+
       {/* Auto-generated Filters */}
       <div style={styles.filterContainer}>
         {filters.map((f) => (
@@ -258,26 +278,6 @@ export default function Home() {
           );
         })}
       </div>
-
-      {/* Main Action Button */}
-      <button
-        onClick={startSpin}
-        disabled={isSpinning || filteredRestaurants.length === 0}
-        style={{
-          ...styles.mainBtn,
-          opacity: filteredRestaurants.length === 0 ? 0.5 : 1,
-          cursor: isSpinning ? 'wait' : filteredRestaurants.length === 0 ? 'not-allowed' : 'pointer',
-        }}
-      >
-        {isSpinning ? (
-          <span style={styles.spinningText}>🎲 选择中...</span>
-        ) : (
-          <>
-            <span style={styles.btnIcon}>🎲</span>
-            <span>帮我选一个</span>
-          </>
-        )}
-      </button>
 
       {/* Bottom Game Link */}
       <a
