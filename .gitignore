@@ -1,0 +1,78 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+dist
+build
+
+# Production
+*.local
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Testing
+coverage
+*.lcov
+
+# Temporary files
+*.tmp
+*.temp
+.cache
+
+# Original image files (not needed in repo)
+*.jpg
+*.jpeg
+*.png
+*.gif
+!public/*.jpg
+!public/*.jpeg
+!public/*.png
+!public/*.gif
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Misc
+*.log
+*.pid
+*.seed
+*.pid.lock
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
