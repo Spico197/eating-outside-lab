@@ -140,8 +140,9 @@ export default function Home() {
     : null;
 
   const renderStars = (rating: number) => {
-    const fullStars = Math.floor(rating);
-    const hasHalf = rating % 1 >= 0.5;
+    const safeRating = Math.max(0, rating);
+    const fullStars = Math.floor(safeRating);
+    const hasHalf = safeRating % 1 >= 0.5;
     return (
       <span style={{ color: '#ffb800' }}>
         {'★'.repeat(fullStars)}
